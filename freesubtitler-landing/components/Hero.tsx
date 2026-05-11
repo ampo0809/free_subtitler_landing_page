@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Hero() {
   return (
     <section
@@ -57,14 +59,19 @@ export function Hero() {
         </div>
 
         <div
-          className="hero-fade-up relative min-h-[360px] overflow-hidden rounded-[42px] border border-[var(--panel-border)] bg-[var(--shell)] shadow-[0_30px_80px_rgba(15,11,7,0.22)]"
+          className="hero-fade-up overflow-hidden rounded-[16px] border border-[rgba(15,11,7,0.08)] shadow-[0_30px_80px_rgba(15,11,7,0.22)]"
           style={{ animationDelay: "600ms" }}
           aria-hidden="true"
         >
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(245,166,35,0.20),transparent_34%),linear-gradient(180deg,rgba(30,22,16,0.96),rgba(15,11,7,1))]" />
-          <div className="absolute inset-x-8 top-8 h-24 rounded-[28px] border border-[rgba(255,255,255,0.05)] bg-[rgba(255,255,255,0.02)] shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]" />
-          <div className="absolute inset-x-10 bottom-10 top-24 rounded-[30px] border border-[rgba(255,255,255,0.05)] bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01))] shadow-[inset_0_0_80px_rgba(245,166,35,0.08)]" />
-          <div className="absolute left-1/2 top-12 h-32 w-32 -translate-x-1/2 rounded-full bg-[rgba(245,166,35,0.12)] blur-3xl" />
+          <Image
+            src="/hero-mockup.png"
+            alt=""
+            width={1500}
+            height={1200}
+            sizes="(max-width: 1024px) 100vw, 46vw"
+            className="h-auto w-full"
+            priority
+          />
         </div>
       </div>
     </section>

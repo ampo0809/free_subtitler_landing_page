@@ -39,6 +39,11 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title,
   description,
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg"
+  },
   keywords: [
     "free subtitle generator",
     "add subtitles to video",
