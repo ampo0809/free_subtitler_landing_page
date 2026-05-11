@@ -10,7 +10,7 @@ const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&mode
 
 const chips = [
   "🔒 Fully Local — Nothing Uploaded",
-  "💸 Always Free — No Subscription",
+  "🤫 Fully private — We collect no data",
   "⚡ Fast Results — Whisper AI Powered"
 ];
 
@@ -36,7 +36,7 @@ export function VideoDemo() {
           </h2>
           <p className="mt-5 text-lg leading-8 text-[rgba(15,11,7,0.72)]">
             Watch FreeSubtitler turn video into polished captions with fully
-            local Whisper processing on your Mac. No uploads, no subscription,
+            local Whisper processing on your Mac. No uploads, no paid tokens, no subscription,
             no waiting on the cloud.
           </p>
         </div>

@@ -10,11 +10,11 @@ export function DownloadSection() {
             className="mt-5 text-4xl leading-[0.95] sm:text-5xl"
             data-display="true"
           >
-            Free Subtitle Generator for Mac
+            Free Subtitle Generator
           </h2>
           <p className="mt-5 max-w-xl text-base leading-8 text-[var(--muted)] sm:text-lg">
-            One-click install. Whisper AI runs entirely on your machine. No
-            account, no upload, no cost — ever.
+            One-click install. FreeSubtitler runs entirely on your machine. No
+            account, no upload, no cost.
           </p>
           <div className="mt-8 flex flex-col items-start gap-4">
             {/* TODO: replace with real download URL */}
@@ -23,10 +23,10 @@ export function DownloadSection() {
               aria-label="Download FreeSubtitler for Mac"
               className="rounded-full bg-[var(--accent)] px-7 py-3.5 text-sm font-semibold text-[var(--shell)] shadow-[0_14px_40px_rgba(245,166,35,0.24)] transition hover:bg-[var(--accent-strong)]"
             >
-              Download for Mac — Free
+              Download for Mac
             </a>
             <p className="text-sm text-[var(--muted)]">
-              macOS 12+ · Apple Silicon &amp; Intel
+              macOS 14+ · Apple Silicon (M Chips)
             </p>
             <button
               type="button"
@@ -37,7 +37,7 @@ export function DownloadSection() {
               Windows — Coming Soon
             </button>
             <p className="text-sm text-[var(--muted)]">
-              Free forever. Open source.
+                   
             </p>
           </div>
         </article>
@@ -54,7 +54,7 @@ export function DownloadSection() {
           </h2>
           <p className="mt-5 max-w-xl text-base leading-8 text-[var(--muted)] sm:text-lg">
             FreeSubtitler is actively developed. Your feedback directly shapes
-            what gets built next.
+            it.
           </p>
           <div className="mt-8 flex flex-col items-start gap-4">
             {/* TODO: replace with real Google Form URL */}
@@ -65,9 +65,6 @@ export function DownloadSection() {
             >
               Send Feedback / Report a Bug
             </a>
-            <p className="text-sm text-[var(--muted)]">
-              Response time is usually under 48 hours.
-            </p>
           </div>
         </article>
       </div>

@@ -36,7 +36,9 @@ export function Footer() {
             {/* TODO: replace with real privacy policy URL */}
             <a
               className="transition hover:text-[var(--shell)]"
-              href="#"
+              href="https://www.backlogbuild.com/privacy-policy"
+              target="_blank"
+              rel="noreferrer"
               aria-label="Read the FreeSubtitler privacy policy"
             >
               Privacy Policy
