@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import { DownloadSection } from "@/components/DownloadSection";
+import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Hero />
       <VideoDemo />
       <DownloadSection />
+      <FAQ />
       <Footer />
     </main>
   );
