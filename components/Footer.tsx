@@ -28,7 +28,8 @@ export function Footer() {
             {/* TODO: replace with real Google Form URL */}
             <a
               className="transition hover:text-[var(--shell)]"
-              href="https://forms.google.com/placeholder"
+              href="https://forms.gle/58JKsQwSYWHr9duD7"
+              target="_blank"
               aria-label="Send FreeSubtitler feedback"
             >
               Feedback

@@ -59,7 +59,8 @@ export function DownloadSection() {
           <div className="mt-8 flex flex-col items-start gap-4">
             {/* TODO: replace with real Google Form URL */}
             <a
-              href="https://forms.google.com/placeholder"
+              href="https://forms.gle/58JKsQwSYWHr9duD7"
+              target="_blank"
               aria-label="Send feedback or report a bug"
               className="rounded-full border border-[rgba(245,166,35,0.5)] bg-transparent px-7 py-3.5 text-sm font-semibold text-[var(--accent)] transition hover:border-[var(--accent)] hover:bg-[rgba(245,166,35,0.06)]"
             >
