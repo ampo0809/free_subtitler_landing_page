@@ -39,13 +39,13 @@ export function Hero() {
             style={{ animationDelay: "480ms" }}
           >
             <div className="flex flex-col items-start gap-3">
-              <button
-                type="button"
+              <a
+                href="https://github.com/ampo0809/free_subtitler_release/releases/download/v1.0.0/FreeSubtitler.zip"
                 aria-label="Download FreeSubtitler for Mac"
                 className="rounded-full bg-[var(--accent)] px-7 py-3.5 text-sm font-semibold text-[var(--shell)] shadow-[0_14px_40px_rgba(245,166,35,0.26)] transition hover:bg-[var(--accent-strong)]"
               >
                 Download for Mac
-              </button>
+              </a>
             </div>
             <button
               type="button"

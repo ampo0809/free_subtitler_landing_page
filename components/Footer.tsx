@@ -27,7 +27,7 @@ export function Footer() {
               {/* TODO: replace with real download URL */}
               <a
                 className="transition hover:text-[var(--shell)]"
-                href="#"
+                href="https://github.com/ampo0809/free_subtitler_release/releases/download/v1.0.0/FreeSubtitler.zip"
                 aria-label="Go to FreeSubtitler download"
               >
                 Download

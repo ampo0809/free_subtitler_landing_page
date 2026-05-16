@@ -42,7 +42,7 @@ export function VideoDemo() {
                 fill
                 unoptimized
                 sizes="(max-width: 1024px) 100vw, 960px"
-                className="scale-105 object-cover opacity-95"
+                className="scale-105 object-cover"
               />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(15,11,7,0.04),rgba(15,11,7,0.2))]" />
             </div>
