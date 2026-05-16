@@ -24,7 +24,6 @@ export function Footer() {
               className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--muted)]"
               aria-label="Footer navigation"
             >
-              {/* TODO: replace with real download URL */}
               <a
                 className="transition hover:text-[var(--shell)]"
                 href="https://github.com/ampo0809/free_subtitler_release/releases/download/v1.0.0/FreeSubtitler.zip"
@@ -32,7 +31,6 @@ export function Footer() {
               >
                 Download
               </a>
-              {/* TODO: replace with real Google Form URL */}
               <a
                 className="transition hover:text-[var(--shell)]"
                 href="https://forms.gle/58JKsQwSYWHr9duD7"
@@ -52,7 +50,6 @@ export function Footer() {
               >
                 Credits
               </button>
-              {/* TODO: replace with real privacy policy URL */}
               <a
                 className="transition hover:text-[var(--shell)]"
                 href="https://www.backlogbuild.com/privacy-policy"

@@ -3,7 +3,7 @@ import { Bebas_Neue, DM_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const siteUrl = "https://example.com";
+const siteUrl = "https://freesubtitler.com";
 const title = "FreeSubtitler — Free AI Subtitle Generator for Mac";
 const description =
   "Add subtitles to any video for free. FreeSubtitler uses Whisper AI to generate accurate captions locally on your Mac — no upload, no account, no cost.";

@@ -17,7 +17,6 @@ export function DownloadSection() {
             account, no upload, no cost.
           </p>
           <div className="mt-8 flex flex-col items-start gap-4">
-            {/* TODO: replace with real download URL */}
             <a
               href="https://github.com/ampo0809/free_subtitler_release/releases/download/v1.0.0/FreeSubtitler.zip"
               aria-label="Download FreeSubtitler for Mac"
@@ -57,7 +56,6 @@ export function DownloadSection() {
             it.
           </p>
           <div className="mt-8 flex flex-col items-start gap-4">
-            {/* TODO: replace with real Google Form URL */}
             <a
               href="https://forms.gle/58JKsQwSYWHr9duD7"
               target="_blank"
