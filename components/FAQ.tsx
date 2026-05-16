@@ -44,17 +44,23 @@ export function FAQ() {
           </p>
           <div className="mt-8 grid gap-7">
             {faqs.map((faq) => (
-              <article
+              <details
                 key={faq.question}
-                className="border-t border-[var(--panel-border)] pt-7 first:border-t-0 first:pt-0"
+                className="group border-t border-[var(--panel-border)] pt-7 first:border-t-0 first:pt-0"
               >
-                <h3 className="text-2xl leading-tight sm:text-3xl" data-display="true">
-                  {faq.question}
-                </h3>
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-2xl leading-tight transition hover:text-[var(--accent)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)] sm:text-3xl [&::-webkit-details-marker]:hidden" data-display="true">
+                  <span>{faq.question}</span>
+                  <span
+                    className="shrink-0 text-2xl text-[var(--accent)] transition group-open:rotate-45"
+                    aria-hidden="true"
+                  >
+                    +
+                  </span>
+                </summary>
                 <p className="mt-3 max-w-3xl text-base leading-8 text-[var(--muted)] sm:text-lg">
                   {faq.answer}
                 </p>
-              </article>
+              </details>
             ))}
           </div>
         </div>
