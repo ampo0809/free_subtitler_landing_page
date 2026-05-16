@@ -49,6 +49,7 @@ const structuredData = {
       "@type": ["SoftwareApplication", "WebApplication"],
       name: "FreeSubtitler",
       url: siteUrl,
+      image: `${siteUrl}/og-image.png`,
       operatingSystem: "macOS",
       applicationCategory: "MultimediaApplication",
       offers: {
@@ -101,6 +102,23 @@ const structuredData = {
           text: item.answer
         }
       }))
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: siteUrl
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Free Subtitle Generator",
+          item: siteUrl
+        }
+      ]
     }
   ]
 };
@@ -142,12 +160,21 @@ export const metadata: Metadata = {
     url: siteUrl,
     title,
     description,
-    siteName: "FreeSubtitler"
+    siteName: "FreeSubtitler",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "FreeSubtitler local video subtitling app interface"
+      }
+    ]
   },
   twitter: {
     card: "summary_large_image",
     title,
-    description
+    description,
+    images: ["/og-image.png"]
   },
   robots: {
     index: true,
