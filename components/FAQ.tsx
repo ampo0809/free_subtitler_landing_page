@@ -31,7 +31,7 @@ export function FAQ() {
     {
       question: "What can I export with FreeSubtitler?",
       answer:
-        "FreeSubtitler lets you generate subtitles from video and export either an SRT subtitle file or a video with subtitles burned in. Subtitle generation runs locally on your Mac, so your video does not need to be uploaded."
+        "FreeSubtitler lets you generate subtitles from video and export either an SRT subtitle file or a video with subtitles burned in. Subtitle generation runs locally on your Computer, so your video does not need to be uploaded."
     }
   ];
 
@@ -42,13 +42,6 @@ export function FAQ() {
           <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[var(--accent)] sm:text-sm">
             FAQ
           </p>
-          <h2
-            id="faq-heading"
-            className="mt-5 text-4xl leading-[0.95] sm:text-5xl"
-            data-display="true"
-          >
-            Frequently Asked Questions
-          </h2>
           <div className="mt-8 grid gap-7">
             {faqs.map((faq) => (
               <article

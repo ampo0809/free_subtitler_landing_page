@@ -24,11 +24,11 @@ export function VideoDemo() {
             className="mt-5 text-5xl leading-[0.95] text-[var(--shell)] sm:text-6xl lg:text-[4.75rem]"
             data-display="true"
           >
-            From Raw Footage to Subtitled Video in Seconds
+            From Raw Footage to Subtitled Video
           </h2>
           <p className="mt-5 text-lg leading-8 text-[rgba(15,11,7,0.72)]">
             Watch FreeSubtitler turn video into polished captions with fully
-            local processing on your Desktop. No uploads, no paid tokens, no subscription,
+            local processing on your machine. No uploads, no paid tokens, no subscription,
             no waiting on the cloud.
           </p>
         </div>

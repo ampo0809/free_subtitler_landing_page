@@ -17,13 +17,13 @@ export function Hero() {
             data-display="true"
             style={{ animationDelay: "120ms" }}
           >
-            Free Subtitle Generator. No Account. No Watermark.
+            Add Subtitles to Any Video. Free.
           </h1>
           <p
             className="hero-fade-up mt-6 max-w-xl text-lg leading-8 text-[rgba(15,11,7,0.82)] sm:text-xl"
             style={{ animationDelay: "240ms" }}
           >
-            FreeSubtitler turns your video into accurate subtitles on your Mac.
+            FreeSubtitler turns your video into accurate subtitles on your Computer.
             Upload a video, generate captions with Whisper AI, then export an
             SRT file or a burned-in video. No signup, no limits, no upsell.
           </p>
