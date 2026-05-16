@@ -14,7 +14,8 @@ export function DownloadSection() {
           </h2>
           <p className="mt-5 max-w-xl text-base leading-8 text-[var(--muted)] sm:text-lg">
             One-click install. FreeSubtitler runs entirely on your machine. No
-            account, no upload, no cost.
+            account, no signup, no upload, no watermark, no cost. Export SRT
+            files or burned-in videos without an upgrade.
           </p>
           <div className="mt-8 flex flex-col items-start gap-4">
             <a
@@ -22,7 +23,7 @@ export function DownloadSection() {
               aria-label="Download FreeSubtitler for Mac"
               className="rounded-full bg-[var(--accent)] px-7 py-3.5 text-sm font-semibold text-[var(--shell)] shadow-[0_14px_40px_rgba(245,166,35,0.24)] transition hover:bg-[var(--accent-strong)]"
             >
-              Download for Mac
+              Download Free for Mac
             </a>
             <p className="text-sm text-[var(--muted)]">
               macOS 14+ · Apple Silicon (M Chips)
@@ -35,9 +36,6 @@ export function DownloadSection() {
             >
               Windows — Coming Soon
             </button>
-            <p className="text-sm text-[var(--muted)]">
-                   
-            </p>
           </div>
         </article>
 

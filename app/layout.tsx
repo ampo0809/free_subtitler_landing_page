@@ -4,9 +4,9 @@ import Script from "next/script";
 import "./globals.css";
 
 const siteUrl = "https://freesubtitler.com";
-const title = "FreeSubtitler — Free AI Subtitle Generator for Mac";
+const title = "Free Subtitle Generator: No Account, No Watermark";
 const description =
-  "Add subtitles to any video for free. FreeSubtitler uses Whisper AI to generate accurate captions locally on your Mac — no upload, no account, no cost.";
+  "Generate subtitles for free with FreeSubtitler. No account, no signup, no watermark, no upsell. Export an SRT file or burned-in video.";
 
 const displayFont = Bebas_Neue({
   variable: "--font-display",
@@ -19,21 +19,90 @@ const bodyFont = DM_Sans({
   subsets: ["latin"]
 });
 
+const faqItems = [
+  {
+    question: "Why is FreeSubtitler free?",
+    answer:
+      "FreeSubtitler is part of BacklogBuild's free public toolkit. There are no subscriptions, hidden fees, upsells, or paywalled subtitle export features."
+  },
+  {
+    question: "Is FreeSubtitler really free with no account or signup?",
+    answer:
+      "Yes. FreeSubtitler is completely free and works without an account, signup, login, or registration. There are no subscriptions, hidden fees, upsells, or paywalled subtitle export features."
+  },
+  {
+    question: "Does FreeSubtitler add a watermark?",
+    answer:
+      "No. FreeSubtitler does not add a watermark to exported videos. You can generate subtitles and export an SRT file or a burned-in video without upgrading to a paid plan."
+  },
+  {
+    question: "What can I export with FreeSubtitler?",
+    answer:
+      "FreeSubtitler lets you generate subtitles from video and export either an SRT subtitle file or a video with subtitles burned in. Subtitle generation runs locally on your Mac, so your video does not need to be uploaded."
+  }
+];
+
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "FreeSubtitler",
-  operatingSystem: "macOS",
-  applicationCategory: "MultimediaApplication",
-  offers: {
-    "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD"
-  },
-  description:
-    "Free AI subtitle and caption generator for Mac. Powered by Whisper AI. Works offline, no account required.",
-  keywords:
-    "free subtitle generator, free captions, add subtitles to video, whisper AI subtitles"
+  "@graph": [
+    {
+      "@type": ["SoftwareApplication", "WebApplication"],
+      name: "FreeSubtitler",
+      url: siteUrl,
+      operatingSystem: "macOS",
+      applicationCategory: "MultimediaApplication",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "USD"
+      },
+      description:
+        "FreeSubtitler is a free subtitle generator that turns video into accurate subtitles using Whisper AI. It works without an account, adds no watermark, and exports SRT files or burned-in videos.",
+      keywords:
+        "free subtitle generator, add subtitles to video free, free SRT generator, subtitle generator no watermark, no account subtitle generator, free subtitle tool no registration",
+      featureList: [
+        "No account required",
+        "No signup",
+        "No watermark",
+        "No upsell",
+        "Export SRT subtitle files",
+        "Export burned-in video",
+        "Runs locally on Mac"
+      ]
+    },
+    {
+      "@type": "HowTo",
+      name: "How to generate subtitles with FreeSubtitler",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Upload video",
+          text: "Open FreeSubtitler and choose your video file."
+        },
+        {
+          "@type": "HowToStep",
+          name: "Generate subtitles",
+          text: "FreeSubtitler uses Whisper AI to generate subtitles locally on your Mac."
+        },
+        {
+          "@type": "HowToStep",
+          name: "Export",
+          text: "Export an SRT subtitle file or a video with subtitles burned in."
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: item.answer
+        }
+      }))
+    }
+  ]
 };
 
 export const metadata: Metadata = {
@@ -47,7 +116,15 @@ export const metadata: Metadata = {
   },
   keywords: [
     "free subtitle generator",
-    "add subtitles to video",
+    "add subtitles to video free",
+    "free SRT generator",
+    "generate subtitles no watermark",
+    "subtitle video no account",
+    "no account subtitle generator",
+    "subtitle generator no watermark",
+    "free SRT file generator no signup",
+    "burn subtitles into video free",
+    "free subtitle tool no registration",
     "free captions",
     "AI subtitles",
     "whisper subtitles",

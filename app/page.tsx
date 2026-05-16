@@ -12,7 +12,7 @@ const VideoDemo = dynamic(
 export default function HomePage() {
   return (
     <main className="w-full overflow-x-clip">
-      <h2 className="sr-only">Free Subtitle Generator — FreeSubtitler</h2>
+      <p className="sr-only">Free Subtitle Generator - FreeSubtitler</p>
       <Hero />
       <VideoDemo />
       <DownloadSection />
