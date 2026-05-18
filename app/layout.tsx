@@ -4,6 +4,7 @@ import Script from "next/script";
 import "./globals.css";
 
 const siteUrl = "https://freesubtitler.com";
+const googleAnalyticsId = "G-ZPMB2CY206";
 const title = "Free Subtitle Generator: No Account, No Watermark";
 const description =
   "Generate subtitles for free with FreeSubtitler. No account, no signup, no watermark, no upsell. Export an SRT file or burned-in video.";
@@ -191,15 +192,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${bodyFont.variable} ${displayFont.variable}`}>
         <Script
+          id="google-analytics-loader"
+          strategy="afterInteractive"
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-ZPMB2CY206"
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
         />
-        <Script id="google-analytics">
+        <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-ZPMB2CY206');
+            gtag('config', '${googleAnalyticsId}');
           `}
         </Script>
         <script
